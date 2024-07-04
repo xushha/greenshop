@@ -3,33 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Greenshop</title>
-    <a id="exit_a" href="#" ><img src="images/images.png" alt="logo"></a>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-<h1>Login | <span>Register</span></h1>
+<div class="page">
+<h1 >Login | <span>Register</span></h1>
 
-  <form name="registration" >
-      <p> Enter your email and password to register. </p>
-      <div class="content">
+  <form name="registration" class="content" >
+      <p class="text subject"> Enter your email and password to register. </p>
+      <div>
           <input type="text" placeholder="Username">
       </div>
-    <div class="content">
+    <div>
         <input  type="email" placeholder="Enter your email address">
     </div>
-    <div class="content">
+    <div>
         <input type="password" placeholder="Password"  >
     </div>
-      <div class="content">
+      <div >
           <input  type="password"  placeholder="Confirm password">
       </div>
-      <button type="submit" class="text">Register</button>
-      <p >Or register with</p>
+      <div class="btn">
+          <button type="submit" class="text">Register</button>
+      </div>
 
-      <a href="#" ><img src="images/google.svg" alt="google" >Continue with Google</a>
-      <a href="#" ><img src="images/facebook.svg" alt="face" >Continue with Facebook</a>
   </form>
+
+      <p class="text subject options">Or register with</p>
+
+      <a class="logo" href="#" ><img src="images/google.svg" alt="google" >Continue with Google</a>
+      <a  class="logo"  href="#" ><img src="images/facebook.svg" alt="face" >Continue with Facebook</a>
+
+</div>
 </body>
 </html>
