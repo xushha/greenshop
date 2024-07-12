@@ -1,3 +1,95 @@
+@font-face {
+    font-family: 'cera_round_pro_demoblack';
+    src: url('../fonts/ceraroundprodemo-black-webfont.eot');
+    src: url('../fonts/ceraroundprodemo-black-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ceraroundprodemo-black-webfont.woff2') format('woff2'),
+    url('../fonts/ceraroundprodemo-black-webfont.woff') format('woff'),
+    url('../fonts/ceraroundprodemo-black-webfont.ttf') format('truetype'),
+    url('../fonts/ceraroundprodemo-black-webfont.svg#cera_round_pro_demoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cera_round_pro_demobold';
+    src: url('../fonts/ceraroundprodemo-bold-webfont.eot');
+    src: url('../fonts/ceraroundprodemo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ceraroundprodemo-bold-webfont.woff2') format('woff2'),
+    url('../fonts/ceraroundprodemo-bold-webfont.woff') format('woff'),
+    url('../fonts/ceraroundprodemo-bold-webfont.ttf') format('truetype'),
+    url('../fonts/ceraroundprodemo-bold-webfont.svg#cera_round_pro_demobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cera_round_pro_demolight';
+    src: url('../fonts/ceraroundprodemo-light-webfont.eot');
+    src: url('../fonts/ceraroundprodemo-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ceraroundprodemo-light-webfont.woff2') format('woff2'),
+    url('../fonts/ceraroundprodemo-light-webfont.woff') format('woff'),
+    url('../fonts/ceraroundprodemo-light-webfont.ttf') format('truetype'),
+    url('../fonts/ceraroundprodemo-light-webfont.svg#cera_round_pro_demolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: '../fonts/cera_round_pro_demomedium';
+    src: url('../fonts/ceraroundprodemo-medium-webfont.eot');
+    src: url('../fonts/ceraroundprodemo-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ceraroundprodemo-medium-webfont.woff2') format('woff2'),
+    url('../fonts/ceraroundprodemo-medium-webfont.woff') format('woff'),
+    url('../fonts/ceraroundprodemo-medium-webfont.ttf') format('truetype'),
+    url('../fonts/ceraroundprodemo-medium-webfont.svg#cera_round_pro_demomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cera_round_pro_demoregular';
+    src: url('../fonts/ceraroundprodemo-regular-webfont.eot');
+    src: url('../fonts/ceraroundprodemo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ceraroundprodemo-regular-webfont.woff2') format('woff2'),
+    url('../fonts/ceraroundprodemo-regular-webfont.woff') format('woff'),
+    url('../fonts/ceraroundprodemo-regular-webfont.ttf') format('truetype'),
+    url('../fonts/ceraroundprodemo-regular-webfont.svg#cera_round_pro_demoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cera_round_pro_demothin';
+    src: url('../fonts/ceraroundprodemo-thin-webfont.eot');
+    src: url('../fonts/ceraroundprodemo-thin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ceraroundprodemo-thin-webfont.woff2') format('woff2'),
+    url('../fonts/ceraroundprodemo-thin-webfont.woff') format('woff'),
+    url('../fonts/ceraroundprodemo-thin-webfont.ttf') format('truetype'),
+    url('../fonts/ceraroundprodemo-thin-webfont.svg#cera_round_pro_demothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 *{
     padding:0;
     margin:0;
@@ -91,49 +183,67 @@ img{
 
 }
 
-.container {
-    padding-top:12px;
-    padding-bottom: 24px;
+.index_page {
+    padding:30px 120px 52px;
+}
+
+
+
+.header_container {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom:1px solid #46a358;
+    margin-bottom:12px;
+    padding-bottom:17.7px;
 
 }
 
-.whole_container{
-    padding:31px 120px;
-}
 
 
 .login{
+    font-family: '../fonts/cera_round_pro_demomedium'; sans-serif;
     background-color: #46a358;
     color:#eaeaea;
     padding:7px 17px;
     font-size: 16px;
     text-decoration: none;
     border-radius: 6px;
-    display:flex;
+    display:inline-flex;
     justify-content: center;
     align-items: center;
 
 }
 
-#login_img{
+.login:before{
+    background-image:url('../images/Logout.svg');
+    display:inline-flex;
     width:20px;
     height:20px;
+    content:"";
+    margin:1px;
 }
 
-.container img{
+
+
+.header_container img{
     width:150px;
     height: 34.3px;
 }
 
+.menu ul{
+    display: flex;
+    align-items: center;
+}
 .menu li{
-    display:inline-block;
-    min-width:100px;
-    text-align: center;
+   
     margin-right:50px;
+
+    font-family: 'cera_round_pro_demoregular'; sans-serif;
+
+
+
 }
 
 
@@ -146,4 +256,73 @@ img{
 
 .menu_a:hover{
     font-weight:bold;
+}
+.main_container {
+    background-color:#F5F5F5;
+    display:flex;
+    justify-content: space-between;
+
+
+}
+
+.text_section{
+    padding-left:40px;
+}
+
+.text_section span{
+    color: #46a358;
+    font-size: 70px;
+}
+
+.text_section h1{
+
+    font: 'cera_round_pro_demoblack';
+    font-size:70px;
+    font-weight: 900;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    margin:6px;
+
+}
+
+.text_section p{
+    font: 'cera_round_pro_demoregular';
+    font-size: 14px;
+    line-height: 171%;
+    color: #727272;
+    width:557px;
+    margin-bottom:44px;
+}
+.text_section h2{
+    font:'cera_round_pro_demomedium';
+    font-size: 14px;
+    font-weight:500;
+    line-height: 114%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    padding-top:68px;
+    margin:6px;
+
+}
+
+.main_container a{
+    font-family:'cera_round_pro_demobold'; sans_serif;
+    background-color:#46a358;
+    border-radius:6px;
+    color:white;
+    text-decoration:none;
+    display: flex;
+    justify-content: left;
+    font-size:16px;
+    padding:10px 26px;
+    width:140px;
+
+}
+
+
+.main_container img{
+    width:507px;
+    height: 450px;
 }
