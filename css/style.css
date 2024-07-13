@@ -121,11 +121,7 @@
 
 
 }
-img{
-    width: 20px;
-    height:20px;
 
-}
 
 
 .content{
@@ -134,20 +130,19 @@ img{
 
 }
 
-.index_page {
-    padding:30px 120px 52px;
-}
 
 
 
 .header_container {
-
+    max-width: 1200px;
+    margin:auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 0.5px 0 0 rgba(70, 163, 88, 0.5);
-    margin-bottom:12px;
+    padding-top:30px;
     padding-bottom:17.7px;
+    margin-bottom: 10px;
 
 }
 
@@ -177,12 +172,6 @@ img{
 }
 
 
-
-.header_container img{
-    width:150px;
-    height: 34.3px;
-}
-
 .menu ul{
     display: flex;
     align-items: center;
@@ -192,8 +181,10 @@ img{
     margin-right:50px;
     font-family: 'CeraPro-Regular', sans-serif;
 
+}
 
-
+.menu li:last-child{
+    margin-right: 0;
 }
 
 
@@ -208,6 +199,9 @@ img{
     font-weight:bold;
 }
 .main_container {
+
+    max-width: 1200px;
+    margin:auto;
     background-color:#F5F5F5;
     display:flex;
     justify-content: space-between;
