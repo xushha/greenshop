@@ -239,8 +239,7 @@ img{
 .menu li{
    
     margin-right:50px;
-
-    font-family: 'cera_round_pro_demoregular'; sans-serif;
+    font-family: 'cera_round_pro_demoregular', sans-serif;
 
 
 
@@ -287,7 +286,7 @@ img{
 }
 
 .text_section p{
-    font: 'cera_round_pro_demoregular';
+    font-family: 'cera_round_pro_demoregular', sans-serif;
     font-size: 14px;
     line-height: 171%;
     color: #727272;
@@ -308,7 +307,7 @@ img{
 }
 
 .main_container a{
-    font-family:'cera_round_pro_demobold'; sans_serif;
+    font-family:'cera_round_pro_demobold';
     background-color:#46a358;
     border-radius:6px;
     color:white;
