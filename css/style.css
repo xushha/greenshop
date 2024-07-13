@@ -1,95 +1,46 @@
 @font-face {
-    font-family: 'cera_round_pro_demoblack';
-    src: url('../fonts/ceraroundprodemo-black-webfont.eot');
-    src: url('../fonts/ceraroundprodemo-black-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/ceraroundprodemo-black-webfont.woff2') format('woff2'),
-    url('../fonts/ceraroundprodemo-black-webfont.woff') format('woff'),
-    url('../fonts/ceraroundprodemo-black-webfont.ttf') format('truetype'),
-    url('../fonts/ceraroundprodemo-black-webfont.svg#cera_round_pro_demoblack') format('svg');
+    font-family: 'CeraPro-Bold';
+    src: url('../fonts/CeraPro-Bold.eot');
+    src: url('../fonts/CeraPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CeraPro-Bold.woff2') format('woff2'),
+    url('../fonts/CeraPro-Bold.woff') format('woff'),
+    url('../fonts/CeraPro-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
-    font-family: 'cera_round_pro_demobold';
-    src: url('../fonts/ceraroundprodemo-bold-webfont.eot');
-    src: url('../fonts/ceraroundprodemo-bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/ceraroundprodemo-bold-webfont.woff2') format('woff2'),
-    url('../fonts/ceraroundprodemo-bold-webfont.woff') format('woff'),
-    url('../fonts/ceraroundprodemo-bold-webfont.ttf') format('truetype'),
-    url('../fonts/ceraroundprodemo-bold-webfont.svg#cera_round_pro_demobold') format('svg');
+    font-family: 'CeraPro-Regular';
+    src: url('../fonts/CeraPro-Regular.eot');
+    src: url('../fonts/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CeraPro-Regular.woff2') format('woff2'),
+    url('../fonts/CeraPro-Regular.woff') format('woff'),
+    url('../fonts/CeraPro-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
-
 @font-face {
-    font-family: 'cera_round_pro_demolight';
-    src: url('../fonts/ceraroundprodemo-light-webfont.eot');
-    src: url('../fonts/ceraroundprodemo-light-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/ceraroundprodemo-light-webfont.woff2') format('woff2'),
-    url('../fonts/ceraroundprodemo-light-webfont.woff') format('woff'),
-    url('../fonts/ceraroundprodemo-light-webfont.ttf') format('truetype'),
-    url('../fonts/ceraroundprodemo-light-webfont.svg#cera_round_pro_demolight') format('svg');
+    font-family: 'CeraPro-Black';
+    src: url('../fonts/CeraPro-Black.eot');
+    src: url('../fonts/CeraPro-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CeraPro-Black.woff2') format('woff2'),
+    url('../fonts/CeraPro-Black.woff') format('woff'),
+    url('../fonts/CeraPro-Black.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
-
 @font-face {
-    font-family: '../fonts/cera_round_pro_demomedium';
-    src: url('../fonts/ceraroundprodemo-medium-webfont.eot');
-    src: url('../fonts/ceraroundprodemo-medium-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/ceraroundprodemo-medium-webfont.woff2') format('woff2'),
-    url('../fonts/ceraroundprodemo-medium-webfont.woff') format('woff'),
-    url('../fonts/ceraroundprodemo-medium-webfont.ttf') format('truetype'),
-    url('../fonts/ceraroundprodemo-medium-webfont.svg#cera_round_pro_demomedium') format('svg');
+    font-family: 'CeraPro-Medium';
+    src: url('../fonts/CeraPro-Medium.eot');
+    src: url('../fonts/CeraPro-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CeraPro-Medium.woff2') format('woff2'),
+    url('../fonts/CeraPro-Medium.woff') format('woff'),
+    url('../fonts/CeraPro-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
-
-
-@font-face {
-    font-family: 'cera_round_pro_demoregular';
-    src: url('../fonts/ceraroundprodemo-regular-webfont.eot');
-    src: url('../fonts/ceraroundprodemo-regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/ceraroundprodemo-regular-webfont.woff2') format('woff2'),
-    url('../fonts/ceraroundprodemo-regular-webfont.woff') format('woff'),
-    url('../fonts/ceraroundprodemo-regular-webfont.ttf') format('truetype'),
-    url('../fonts/ceraroundprodemo-regular-webfont.svg#cera_round_pro_demoregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'cera_round_pro_demothin';
-    src: url('../fonts/ceraroundprodemo-thin-webfont.eot');
-    src: url('../fonts/ceraroundprodemo-thin-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/ceraroundprodemo-thin-webfont.woff2') format('woff2'),
-    url('../fonts/ceraroundprodemo-thin-webfont.woff') format('woff'),
-    url('../fonts/ceraroundprodemo-thin-webfont.ttf') format('truetype'),
-    url('../fonts/ceraroundprodemo-thin-webfont.svg#cera_round_pro_demothin') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 *{
     padding:0;
     margin:0;
@@ -194,7 +145,7 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom:1px solid #46a358;
+    box-shadow: 0 0.5px 0 0 rgba(70, 163, 88, 0.5);
     margin-bottom:12px;
     padding-bottom:17.7px;
 
@@ -203,10 +154,10 @@ img{
 
 
 .login{
-    font-family: '../fonts/cera_round_pro_demomedium'; sans-serif;
     background-color: #46a358;
     color:#eaeaea;
     padding:7px 17px;
+    font-family: 'CeraPro-Medium', sans-serif;
     font-size: 16px;
     text-decoration: none;
     border-radius: 6px;
@@ -239,7 +190,7 @@ img{
 .menu li{
    
     margin-right:50px;
-    font-family: 'cera_round_pro_demoregular', sans-serif;
+    font-family: 'CeraPro-Regular', sans-serif;
 
 
 
@@ -274,11 +225,8 @@ img{
 }
 
 .text_section h1{
-
-    font: 'cera_round_pro_demoblack';
+    font-family: 'CeraPro-Black', sans-serif;
     font-size:70px;
-    font-weight: 900;
-    line-height: 100%;
     text-transform: uppercase;
     color: #3d3d3d;
     margin:6px;
@@ -286,7 +234,7 @@ img{
 }
 
 .text_section p{
-    font-family: 'cera_round_pro_demoregular', sans-serif;
+    font-family: 'CeraPro-Regular', sans-serif;
     font-size: 14px;
     line-height: 171%;
     color: #727272;
@@ -294,7 +242,7 @@ img{
     margin-bottom:44px;
 }
 .text_section h2{
-    font:'cera_round_pro_demomedium';
+    font-family: 'CeraPro-Medium', sans-serif;
     font-size: 14px;
     font-weight:500;
     line-height: 114%;
@@ -307,13 +255,14 @@ img{
 }
 
 .main_container a{
-    font-family:'cera_round_pro_demobold';
+
     background-color:#46a358;
     border-radius:6px;
     color:white;
     text-decoration:none;
     display: flex;
     justify-content: left;
+    font-family: 'CeraPro-Bold', sans-serif;
     font-size:16px;
     padding:10px 26px;
     width:140px;
