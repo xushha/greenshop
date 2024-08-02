@@ -392,6 +392,7 @@
 
 .pagination li:hover{
     background-color: #46A358;
+    font-family: 'CeraPro-Regular', sans-serif;
     color: white;
 }
 
@@ -432,4 +433,9 @@
     background-repeat: no-repeat;
     background-size: contain;
     align-items: center;
+}
+
+.aside_menu li:hover{
+    color:#46A358;
+    font-family: 'CeraPro-Bold', sans-serif;
 }
