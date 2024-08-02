@@ -40,7 +40,16 @@
     font-style: normal;
 }
 
-
+@font-face {
+    font-family: 'CeraPro-Light';
+    src: url('../fonts/CeraPro-Light.eot');
+    src: url('../fonts/CeraPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CeraPro-Light.woff2') format('woff2'),
+    url('../fonts/CeraPro-Light.woff') format('woff'),
+    url('../fonts/CeraPro-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 *{
     padding:0;
     margin:0;
@@ -182,6 +191,7 @@
     margin-right:50px;
     font-family: 'CeraPro-Regular', sans-serif;
 
+
 }
 
 .menu li:last-child{
@@ -270,81 +280,156 @@
 
 .float_container{
     display:flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content:flex-start;
     flex-wrap:wrap;
-    max-width: 1200px;
+    max-width:1200px;
     margin:auto;
-    margin-top:171px;
+    margin-top:26px;
+
 
 }
-
-
 .aside_menu{
-    text-decoration: none;
-    color:black;
-    list-style-type:none;
-    padding-bottom:30px;
-    padding-top:30px;
-    max-width: 310px;
-    flex:310px;
-    justify-content: flex-start;
+    background-color: #FBFBFB;
+    max-width:310px;
+    font-family: 'CeraPro-Regular', sans-serif;
 }
 
+.aside_menu li:last-child{
+    margin-bottom: 330px;
+}
 
-
+.aside_menu h2{
+    margin-bottom:17px;
+    padding-left: 18px;
+    padding-top: 16px;
+    font-family: 'CeraPro-Bold', sans-serif;
+    font-size: 18px;
+}
 
 .aside_menu li{
-    list-style-type:none;
-    margin-bottom:20px;
+    margin-bottom:17px;
+    font-family: 'CeraPro-Regular', sans-serif;
+    padding-left: 36px;
 }
 
-.aside_menu a{
-    text-decoration: none;
-    color:black;
+.banner_img{
+    width:310px;
+    height: 470px;
+
 }
 
 
-.aside_menu a:last-child{
-    margin-bottom: 0;
-}
-
-.submenu {
-    display:inline-flex;
+.tabs{
+    display: flex;
     justify-content: space-between;
-
-
-
+    background-color: white;
+    padding-left: 46px;
 
 
 }
-.submenu ul{
+
+.tabs li{
     display: inline-flex;
-}
-
-.submenu li a{
-
     margin-right:37px;
-    text-decoration: none;
-    color: black;
+    font-family: 'CeraPro-Regular', sans-serif;
+    padding-bottom: 7px;
+    border-bottom: 3px solid white;
+}
+.tabs li:last-child{
+    margin:0;
 }
 
-.submenu li:last-child{
-    margin-right:385px;
+.tabs li:hover{
+    border-bottom: 3px solid #46A358;
+    font-family: 'CeraPro-Bold', sans-serif;
+    color: #46A358;
 }
 
-
-
-.cards_container{
-    display:flex;
+.arts{
+    display:inline-flex;
+    flex-direction: row;
+    padding-top: 36px;
+    padding-left: 83px;
     flex-wrap:wrap;
+    max-width: 890px;
+
 }
 
-.cards_container article{
-    background-color: #FBFBFB;
+
+.arts article{
+    background-color: white;
     width: 258px;
-    height:300px;
-    border-top:2px solid #FBFBFB;
+    height:350px;
+    margin: 5px;
     flex:258px;
+    padding-top: 31px;
+
 }
 
 
+
+
+.pagination{
+    margin-top:82px;
+    margin-left: 880px;
+}
+.pagination li{
+    font-family: 'CeraPro-Light', sans-serif;
+    display: inline-block;
+    justify-content: flex-start;
+    border: 2px solid #E5E5E5;
+    padding: 10px 14px;
+    margin-right: 5px;
+    border-radius:4px;
+}
+
+
+.pagination li :last-child{
+
+    margin-right: 0px;
+}
+
+.pagination li:hover{
+    background-color: #46A358;
+    color: white;
+}
+
+.pagination li:hover svg path{
+    stroke:white;
+}
+
+.name{
+    font-family: 'CeraPro-Regular', sans-serif;
+    font-size:16px;
+}
+
+.price{
+    font-family: 'CeraPro-Bold', sans-serif;
+    font-size: 18px;
+    color: #46A358;
+}
+
+
+
+.card_img{
+    background-color: #FBFBFB;
+    width:100%;
+    height: 250px;
+}
+
+.sorting{
+    font-family: 'CeraPro-Regular', sans-serif;
+}
+
+.sorting:after{
+    background-image:url('../images/sorting.svg');
+    content:"";
+    display:inline-flex;
+    width:16px;
+    height:16px;
+    margin:1px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+}

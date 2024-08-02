@@ -1,0 +1,16 @@
+.flex_container {
+    display: flex;
+    max-width:500px;
+    flex-wrap:wrap;
+    /*justify-content:end;*/
+    flex-direction: row-reverse;
+    align-items: baseline;
+}
+
+.flex_container div{
+    display: block;
+    width: 100px;
+    height:500px;
+    background-color: deeppink;
+    margin: 10px;
+}
