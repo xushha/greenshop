@@ -439,3 +439,145 @@
     color:#46A358;
     font-family: 'CeraPro-Bold', sans-serif;
 }
+
+.special_offer{
+    max-width:1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 69px;
+    margin-bottom: 138px;
+}
+
+
+
+.offer_art{
+    max-width: 586px;
+    background-color:#FBFBFB;
+    display: flex;
+    justify-content: space-between;
+
+}
+.off_text{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-family: 'CeraPro-Regular', sans-serif;
+    padding-top: 46px;
+    padding-right: 35px;
+}
+.off_text h2{
+    text-transform: uppercase;
+    font-family: 'CeraPro-Black', sans-serif;
+    color: #3D3D3D;
+    margin-bottom: 9px;
+}
+
+.more_inf{
+    display: inline-block;
+    background-color: #46A358;
+    color: #FBFBFB;
+    border-radius: 6px;
+    padding-top: 11px ;
+    padding-right:36px;
+    padding-left: 28px;
+    text-decoration: none;
+    margin-top: 25px;
+    align-self: flex-end;
+}
+.more_inf:after{
+    background-image:url('../images/arrow.svg');
+    content:"";
+    display:inline-flex;
+    width:1rem;
+    height:1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+}
+
+.blog_post{
+    max-width: 1200px;
+    margin: auto;
+    display:flex;
+    margin-top: 138px;
+    align-items: center;
+    flex-direction: column;}
+
+.blog_post h2{
+    font-size: 30px;
+    font-family: 'CeraPro-Bold', sans-serif;
+    margin-bottom: 15px;
+}
+
+.blog_post p{
+    font-size: 14px;
+    font-family: 'CeraPro-Regular', sans-serif;
+}
+
+.read_more{
+    max-width: 1200px;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    margin-top:35px;
+
+
+}
+.read_more_article{
+   background-color:#FBFBFB;
+    height: 362px;
+    flex-wrap: wrap;
+    /*max-width:268px;*/
+    max-width: 267px;
+}
+
+.blog_img{
+    height:196px;
+    width:100%;
+}
+.data{
+    color: #46A358;
+    font-size: 14px;
+    font-family: 'CeraPro-Medium', sans-serif;
+    padding-top: 9px;
+    margin-bottom: 4px;
+}
+
+.read_more h3{
+    font-size: 20px;
+    font-family: 'CeraPro-Bold', sans-serif;
+    color: #3D3D3D;
+    padding-right: 53px;
+    margin-bottom:4px;
+}
+
+.read_more_link{
+    font-size: 14px;
+    font-family: 'CeraPro-Medium', sans-serif;
+    margin-bottom: 12px;
+
+}
+.read_more_link:after{
+    background-image:url('../images/arrow.svg');
+    content:"";
+    display:inline-flex;
+    width:14px;
+    height:14px;
+    justify-content: center;
+    margin-left: 3px;
+
+}
+
+.read_more_link:hover{
+    color: #46A358;
+    fill:#46A358;
+}
+
+
+
+.dop_info{
+    font-size: 14px;
+    font-family: 'CeraPro-Regular', sans-serif;
+    margin-bottom: 9px;
+}
