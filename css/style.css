@@ -190,6 +190,7 @@
    
     margin-right:50px;
     font-family: 'CeraPro-Regular', sans-serif;
+    position: relative;
 
 
 }
@@ -198,12 +199,43 @@
     margin-right: 0;
 }
 
+.menu li:after{
+    content:"";
+    display: block;
+    width:0;
+    height:2px;
+    background: #46A358;
+    position: relative;
+    top:28px;
+    transition:0.4s;
+}
+
+.menu li:hover:after{
+    width:100%;
+
+}
 
 .menu_a{
     text-decoration: none;
     color:black;
     list-style-type:none;
 
+}
+
+/*.menu li.dropdown:hover ul li ul li{*/
+/*    display: block;*/
+
+/*}*/
+
+.menu ul li ul{
+    display: block;
+    position: absolute;
+    bottom: -97px;
+    left: -47px;
+    /*display: none;*/
+}
+.menu ul li ul li{
+    text-align: left;
 }
 
 .menu_a:hover{
@@ -358,13 +390,20 @@
 
 
 .arts article{
-    background-color: white;
-    width: 258px;
+    background-color: #FBFBFB;
+    width: 260px;
     height:350px;
     margin: 5px;
     flex:258px;
-    padding-top: 31px;
+    /*padding-top: 31px;*/
+    border-top: 1px solid white;
+    position: relative;
+    padding-top: 25px;
 
+}
+
+.arts article:hover{
+    border-top: 1px solid #46A358;
 }
 
 
@@ -416,7 +455,12 @@
 .card_img{
     background-color: #FBFBFB;
     width:100%;
+    height: 240px;
+}
+
+.card_div{
     height: 250px;
+    position: relative;
 }
 
 .sorting{
@@ -484,17 +528,22 @@
     text-decoration: none;
     margin-top: 25px;
     align-self: flex-end;
+    font-family: 'CeraPro-Medium', sans-serif;
+    font-size: 14px;
 }
-.more_inf:after{
-    background-image:url('../images/arrow.svg');
-    content:"";
-    display:inline-flex;
-    width:1rem;
-    height:1rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    align-items: center;
-}
+/*.more_inf:after{*/
+/*    background-image:url('../images/find_more_arrow.svg');*/
+/*    content:"";*/
+/*    display:inline-flex;*/
+/*    width:1rem;*/
+/*    height:1rem;*/
+/*    margin-left: 5px;*/
+/*    padding-bottom: 12px;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: contain;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
 
 .blog_post{
     max-width: 1200px;
@@ -553,6 +602,9 @@
 }
 
 .read_more_link{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
     font-size: 14px;
     font-family: 'CeraPro-Medium', sans-serif;
     margin-bottom: 12px;
@@ -561,10 +613,8 @@
 .read_more_link:after{
     background-image:url('../images/arrow.svg');
     content:"";
-    display:inline-flex;
     width:14px;
     height:14px;
-    justify-content: center;
     margin-left: 3px;
 
 }
@@ -580,4 +630,91 @@
     font-size: 14px;
     font-family: 'CeraPro-Regular', sans-serif;
     margin-bottom: 9px;
+}
+
+.off{
+    width: 80px;
+    height:29px;
+    position: absolute;
+    margin-top: 14px;
+    background-color: #46A358;
+    font-family: 'CeraPro-Medium', sans-serif;
+    font-size:16px;
+    color: #FBFBFB;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*.buy_like_search{*/
+/*    width: 125px;*/
+/*    height: 35px;*/
+/*    display: inline-flex;*/
+/*    position: absolute;*/
+/*    background-color:#FBFBFB;*/
+/*    left: 67px;*/
+/*    top: 235px;*/
+/*}*/
+
+.buy_like_search{
+    width: 0;
+    height: 0;
+    display: inline-flex;
+    position: absolute;
+    background-color:#FBFBFB;
+    /*left: 67px;*/
+    /*top: 235px;*/
+}
+
+
+
+.buy_like_search li {
+    margin-right: 10px;
+}
+
+.buy_like_search li:last-child{
+    margin-right: 0;
+}
+
+.buy_like_search li a {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height:100%;
+    border-radius:4px;
+
+}
+
+
+
+.after_card{
+    display: inline-block;
+    min-height: 92px;
+    width: 100%;
+    background-color: white;
+    padding-top: 12px;
+}
+
+.icons{
+    width: 20px;
+    height: 20px;
+    opacity:0;
+}
+
+.arts article:hover .buy_like_search{
+    width:125px;
+    height: 35px;
+    left: 67px;
+    top: 235px;
+
+}
+.arts article:hover .icons{
+    opacity: 100%;
+}
+
+.buy_like_search li a.icons  :hover{
+    fill:#46A358;
 }
