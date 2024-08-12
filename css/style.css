@@ -497,11 +497,22 @@
 
 .offer_art{
     max-width: 586px;
+    height: 250px;
     background-color:#FBFBFB;
     display: flex;
     justify-content: space-between;
+    /*position:relative;*/
 
 }
+
+.offer_pic{
+    position:relative;
+    top:-60px;
+    width:287px;
+    height:292px;
+}
+
+
 .off_text{
     display: flex;
     flex-direction: column;
@@ -509,41 +520,42 @@
     font-family: 'CeraPro-Regular', sans-serif;
     padding-top: 46px;
     padding-right: 35px;
+
+
 }
 .off_text h2{
     text-transform: uppercase;
     font-family: 'CeraPro-Black', sans-serif;
+    font-size: 18px;
     color: #3D3D3D;
     margin-bottom: 9px;
 }
+.off_text p{
+    line-height: 200%;
+    color:#727272;
+    font-size: 14px;
+}
+
 
 .more_inf{
-    display: inline-block;
+    display: inline-flex;
     background-color: #46A358;
     color: #FBFBFB;
     border-radius: 6px;
-    padding-top: 11px ;
-    padding-right:36px;
-    padding-left: 28px;
+    padding:11px 10px;
     text-decoration: none;
     margin-top: 25px;
-    align-self: flex-end;
+    justify-content: center;
+    align-items:center;
     font-family: 'CeraPro-Medium', sans-serif;
     font-size: 14px;
+    width: 140px;
+    margin-left: 129px;
 }
-/*.more_inf:after{*/
-/*    background-image:url('../images/find_more_arrow.svg');*/
-/*    content:"";*/
-/*    display:inline-flex;*/
-/*    width:1rem;*/
-/*    height:1rem;*/
-/*    margin-left: 5px;*/
-/*    padding-bottom: 12px;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: contain;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*}*/
+
+.more_inf_pic{
+    margin-left: 4px;
+}
 
 .blog_post{
     max-width: 1200px;
@@ -636,7 +648,7 @@
     width: 80px;
     height:29px;
     position: absolute;
-    margin-top: 14px;
+    top:11px;
     background-color: #46A358;
     font-family: 'CeraPro-Medium', sans-serif;
     font-size:16px;
@@ -715,6 +727,15 @@
     opacity: 100%;
 }
 
-.buy_like_search li a.icons  :hover{
+.buy_like_search li a:hover svg path{
     fill:#46A358;
+}
+
+.new_price{
+    text-decoration:line-through;
+    font-family: 'CeraPro-Regular', sans-serif;
+    font-size: 18px;
+    color: #A5A5A5;
+    margin-left:16px;
+    
 }
