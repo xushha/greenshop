@@ -395,7 +395,6 @@
     height:350px;
     margin: 5px;
     flex:258px;
-    /*padding-top: 31px;*/
     border-top: 1px solid white;
     position: relative;
     padding-top: 25px;
@@ -619,24 +618,24 @@
     justify-content: center;
     font-size: 14px;
     font-family: 'CeraPro-Medium', sans-serif;
-    margin-bottom: 12px;
-
-}
-.read_more_link:after{
-    background-image:url('../images/arrow.svg');
-    content:"";
-    width:14px;
-    height:14px;
-    margin-left: 3px;
+    margin-bottom: 112px;
+    text-decoration: none;
+    color:#3D3D3D;
 
 }
 
 .read_more_link:hover{
     color: #46A358;
-    fill:#46A358;
 }
 
-
+.read_more_link svg{
+    width:14px;
+    height:14px;
+    margin-left: 3px;
+}
+.read_more_link:hover svg path{
+    fill:#46A358;
+}
 
 .dop_info{
     font-size: 14px;
