@@ -1,3 +1,10 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
 @font-face {
     font-family: 'CeraPro-Bold';
     src: url('../fonts/CeraPro-Bold.eot');
@@ -49,12 +56,6 @@
     url('../fonts/CeraPro-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-
 }
 
 .page{
@@ -186,6 +187,7 @@
     display: flex;
     align-items: center;
 }
+
 .menu li{
    
     margin-right:50px;
@@ -215,6 +217,9 @@
 
 }
 
+
+
+
 .menu_a{
     text-decoration: none;
     color:black;
@@ -222,25 +227,38 @@
 
 }
 
-/*.menu li.dropdown:hover ul li ul li{*/
-/*    display: block;*/
+.menu{
+    position:relative;
+}
 
+/*.menu_a .dropdown ul li{*/
+/*    display: none;*/
+/*    position:absolute;*/
+/*    bottom: -130px;*/
+/*    left: -60px;*/
+/*    background-color: #E3F8E5;*/
+/*    opacity:0;*/
+/*    height:0;*/
 /*}*/
 
-.menu ul li ul{
-    display: block;
-    position: absolute;
-    bottom: -97px;
-    left: -47px;
-    /*display: none;*/
+
+
+.menu_a .dropdown li {
+    display: none;
+    background-color: blue;
 }
-.menu ul li ul li{
-    text-align: left;
-}
+
+
+
 
 .menu_a:hover{
     font-weight:bold;
+
 }
+
+
+
+
 .main_container {
     max-width: 1200px;
     margin:auto;
@@ -327,6 +345,11 @@
     font-family: 'CeraPro-Regular', sans-serif;
 }
 
+.aside_menu li a{
+    text-decoration: none;
+    color:#3D3D3D;
+}
+
 .aside_menu li:last-child{
     margin-bottom: 330px;
 }
@@ -343,6 +366,11 @@
     margin-bottom:17px;
     font-family: 'CeraPro-Regular', sans-serif;
     padding-left: 36px;
+}
+
+.aside_menu li a:hover{
+    color:#46A358;
+    font-family: 'CeraPro-Bold', sans-serif;
 }
 
 .banner_img{
@@ -367,12 +395,18 @@
     font-family: 'CeraPro-Regular', sans-serif;
     padding-bottom: 7px;
     border-bottom: 3px solid white;
+
+}
+
+.tabs a{
+    text-decoration:none;
+    color:#3D3D3D;
 }
 .tabs li:last-child{
     margin:0;
 }
 
-.tabs li:hover{
+.tabs li a:hover{
     border-bottom: 3px solid #46A358;
     font-family: 'CeraPro-Bold', sans-serif;
     color: #46A358;
@@ -420,8 +454,13 @@
     padding: 10px 14px;
     margin-right: 5px;
     border-radius:4px;
-}
 
+}
+.pagination li a {
+    text-decoration:none;
+    color:#3D3D3D;
+    font-family: 'CeraPro-Regular', sans-serif;
+}
 
 .pagination li :last-child{
 
@@ -430,9 +469,10 @@
 
 .pagination li:hover{
     background-color: #46A358;
-    font-family: 'CeraPro-Regular', sans-serif;
+    font-family: 'CeraPro-Bold', sans-serif;
     color: white;
 }
+
 
 .pagination li:hover svg path{
     stroke:white;
@@ -478,10 +518,6 @@
     align-items: center;
 }
 
-.aside_menu li:hover{
-    color:#46A358;
-    font-family: 'CeraPro-Bold', sans-serif;
-}
 
 .special_offer{
     max-width:1200px;
@@ -588,8 +624,8 @@
    background-color:#FBFBFB;
     height: 362px;
     flex-wrap: wrap;
-    /*max-width:268px;*/
     max-width: 267px;
+    margin-bottom: 112px;
 }
 
 .blog_img{
@@ -618,7 +654,6 @@
     justify-content: center;
     font-size: 14px;
     font-family: 'CeraPro-Medium', sans-serif;
-    margin-bottom: 112px;
     text-decoration: none;
     color:#3D3D3D;
 
@@ -658,15 +693,7 @@
 
 }
 
-/*.buy_like_search{*/
-/*    width: 125px;*/
-/*    height: 35px;*/
-/*    display: inline-flex;*/
-/*    position: absolute;*/
-/*    background-color:#FBFBFB;*/
-/*    left: 67px;*/
-/*    top: 235px;*/
-/*}*/
+
 
 .buy_like_search{
     width: 0;
@@ -674,8 +701,7 @@
     display: inline-flex;
     position: absolute;
     background-color:#FBFBFB;
-    /*left: 67px;*/
-    /*top: 235px;*/
+
 }
 
 

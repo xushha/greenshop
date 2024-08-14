@@ -1,0 +1,773 @@
+@font-face {
+  font-family: 'CeraPro-Bold';
+  src: url('../fonts/CeraPro-Bold.eot');
+  src: url('../fonts/CeraPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/CeraPro-Bold.woff2') format('woff2'),
+  url('../fonts/CeraPro-Bold.woff') format('woff'),
+  url('../fonts/CeraPro-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CeraPro-Regular';
+  src: url('../fonts/CeraPro-Regular.eot');
+  src: url('../fonts/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/CeraPro-Regular.woff2') format('woff2'),
+  url('../fonts/CeraPro-Regular.woff') format('woff'),
+  url('../fonts/CeraPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CeraPro-Black';
+  src: url('../fonts/CeraPro-Black.eot');
+  src: url('../fonts/CeraPro-Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/CeraPro-Black.woff2') format('woff2'),
+  url('../fonts/CeraPro-Black.woff') format('woff'),
+  url('../fonts/CeraPro-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CeraPro-Medium';
+  src: url('../fonts/CeraPro-Medium.eot');
+  src: url('../fonts/CeraPro-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/CeraPro-Medium.woff2') format('woff2'),
+  url('../fonts/CeraPro-Medium.woff') format('woff'),
+  url('../fonts/CeraPro-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CeraPro-Light';
+  src: url('../fonts/CeraPro-Light.eot');
+  src: url('../fonts/CeraPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/CeraPro-Light.woff2') format('woff2'),
+  url('../fonts/CeraPro-Light.woff') format('woff'),
+  url('../fonts/CeraPro-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+
+}
+
+
+$main_color:#46a358;
+$main_font_regular:'CeraPro-Regular';
+$main_font_medium:'CeraPro-Medium';
+
+
+.page{
+  max-width: 500px;
+  margin:auto;
+  border-bottom:10px solid #46a358;
+  padding:46px 100px;
+  text-align:center;
+
+
+}
+
+.page h1{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 80%;
+  color: #3d3d3d;
+  text-align:center;
+  margin-bottom:40px;
+  padding-top:46px;
+}
+
+.page span{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 80%;
+  color: #46a358;
+  text-align:center;
+}
+.page input{
+  width: 300px;
+  height: 40px;
+  margin:16px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  padding:12px 14px;
+}
+.text.subject{
+  width: 300px;
+  height: 16px;
+  margin:auto;
+
+}
+
+.text.subject.options{
+  max-width:300px;
+  margin-bottom:27px;
+  text-align: center;
+}
+
+
+.btn button{
+  border-radius: 5px;
+  width: 300px;
+  height: 45px;
+  background-color: #46a358;
+  color:white;
+  max-width:300px;
+  margin:auto;
+
+}
+.logo {
+  width:300px;
+  height:40px;
+  text-decoration: none;
+  border:1px solid #eaeaea;
+  border-radius:5px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  margin-bottom:14px;
+
+
+
+}
+
+
+
+.content{
+  margin-bottom:41px;
+  text-align: center;
+
+}
+
+
+
+
+
+.header_container {
+  max-width: 1200px;
+  margin:auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0.5px 0 0 rgba(70, 163, 88, 0.5);
+  padding-top:30px;
+  padding-bottom:17.7px;
+  margin-bottom: 10px;
+
+}
+
+
+
+.login{
+  background-color:$main_color;
+  color:#eaeaea;
+  padding:7px 17px;
+  font-family: $main_font_medium, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 6px;
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.login:before{
+  background-image:url('../images/Logout.svg');
+  display:inline-flex;
+  width:20px;
+  height:20px;
+  content:"";
+  margin:1px;
+}
+
+.menu{
+  .ul{
+    display:flex;
+    align-items:center;
+  }
+
+  .li{
+    margin-right:50px;
+    font-family:$main_font_regular, sans-serif;
+    position: relative;
+
+    &last-child{
+      margin-right: 0;
+    }
+
+    &after{
+      content:"";
+        display: block;
+        width:0;
+        height:2px;
+        background:$main_color;
+        position: relative;
+        top:28px;
+        transition:0.4s;
+    }
+    &hover{
+      &after{
+        width:100%;
+      }
+    }
+  }
+
+
+
+}
+//
+//.menu ul{
+//  display: flex;
+//  align-items: center;
+//}
+//.menu li{
+//
+//  margin-right:50px;
+//  font-family:$main_font_regular, sans-serif;
+//  position: relative;
+//
+//
+//}
+//
+//.menu li:last-child{
+//  margin-right: 0;
+//}
+//
+//.menu li:after{
+//  content:"";
+//  display: block;
+//  width:0;
+//  height:2px;
+//  background:$main_color;
+//  position: relative;
+//  top:28px;
+//  transition:0.4s;
+//}
+//
+//.menu li:hover:after{
+//  width:100%;
+//
+//}
+//
+.menu_a{
+  text-decoration: none;
+  color:black;
+  list-style-type:none;
+
+}
+
+
+
+.menu ul li ul{
+  display: block;
+  position: absolute;
+  bottom: -97px;
+  left: -47px;
+}
+.menu ul li ul li{
+  text-align: left;
+}
+
+.menu_a:hover{
+  font-weight:bold;
+}
+.main_container {
+  max-width: 1200px;
+  margin:auto;
+  background-color:#F5F5F5;
+  display:flex;
+  justify-content: space-between;
+
+
+}
+
+.text_section{
+  padding-left:40px;
+}
+
+.text_section span{
+  color: #46a358;
+  font-size: 70px;
+}
+
+.text_section h1{
+  font-family: 'CeraPro-Black', sans-serif;
+  font-size:70px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+
+}
+
+.text_section p{
+  font-family: 'CeraPro-Regular', sans-serif;
+  font-size: 14px;
+  line-height: 171%;
+  color: #727272;
+  width:557px;
+  margin-bottom:44px;
+}
+.text_section h2{
+  font-family: 'CeraPro-Medium', sans-serif;
+  font-size: 14px;
+  font-weight:500;
+  line-height: 114%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3d3d3d;
+  padding-top:68px;
+
+
+}
+
+.main_container a{
+
+  background-color:#46a358;
+  border-radius:6px;
+  color:white;
+  text-decoration:none;
+  display: inline-flex;
+  justify-content: left;
+  font-family: 'CeraPro-Bold', sans-serif;
+  font-size:16px;
+  padding:10px 26px;
+
+
+}
+
+
+.main_container img{
+  width:507px;
+  height: 450px;
+}
+
+.float_container{
+  display:flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  flex-wrap:wrap;
+  max-width:1200px;
+  margin:auto;
+  margin-top:26px;
+
+
+}
+.aside_menu{
+  background-color: #FBFBFB;
+  max-width:310px;
+  font-family: 'CeraPro-Regular', sans-serif;
+  text-decoration: none;
+}
+
+.aside_menu li:last-child{
+  margin-bottom: 330px;
+}
+
+.aside_menu h2{
+  margin-bottom:17px;
+  padding-left: 18px;
+  padding-top: 16px;
+  font-family: 'CeraPro-Bold', sans-serif;
+  font-size: 18px;
+}
+
+.aside_menu li{
+  margin-bottom:17px;
+  font-family: 'CeraPro-Regular', sans-serif;
+  padding-left: 36px;
+}
+
+.banner_img{
+  width:310px;
+  height: 470px;
+
+}
+
+
+.tabs{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding-left: 46px;
+
+
+}
+
+.tabs li{
+  display: inline-flex;
+  margin-right:37px;
+  font-family: 'CeraPro-Regular', sans-serif;
+  padding-bottom: 7px;
+  border-bottom: 3px solid white;
+
+}
+
+.tabs a{
+  text-decoration:none;
+  color:#3D3D3D;
+}
+.tabs li:last-child{
+  margin:0;
+}
+
+.tabs li a:hover{
+  border-bottom: 3px solid #46A358;
+  font-family: 'CeraPro-Bold', sans-serif;
+  color: #46A358;
+}
+
+.arts{
+  display:inline-flex;
+  flex-direction: row;
+  padding-top: 36px;
+  padding-left: 83px;
+  flex-wrap:wrap;
+  max-width: 890px;
+
+}
+
+
+.arts article{
+  background-color: #FBFBFB;
+  width: 260px;
+  height:350px;
+  margin: 5px;
+  flex:258px;
+  border-top: 1px solid white;
+  position: relative;
+  padding-top: 25px;
+
+}
+
+.arts article:hover{
+  border-top: 1px solid #46A358;
+}
+
+
+
+
+.pagination{
+  margin-top:82px;
+  margin-left: 880px;
+}
+.pagination li{
+  font-family: 'CeraPro-Light', sans-serif;
+  display: inline-block;
+  justify-content: flex-start;
+  border: 2px solid #E5E5E5;
+  padding: 10px 14px;
+  margin-right: 5px;
+  border-radius:4px;
+}
+
+
+.pagination li :last-child{
+
+  margin-right: 0px;
+}
+
+.pagination li:hover{
+  background-color: #46A358;
+  font-family: 'CeraPro-Regular', sans-serif;
+  color: white;
+}
+
+.pagination li:hover svg path{
+  stroke:white;
+}
+
+.name{
+  font-family: 'CeraPro-Regular', sans-serif;
+  font-size:16px;
+}
+
+.price{
+  font-family: 'CeraPro-Bold', sans-serif;
+  font-size: 18px;
+  color: #46A358;
+}
+
+
+
+.card_img{
+  background-color: #FBFBFB;
+  width:100%;
+  height: 240px;
+}
+
+.card_div{
+  height: 250px;
+  position: relative;
+}
+
+.sorting{
+  font-family: 'CeraPro-Regular', sans-serif;
+}
+
+.sorting:after{
+  background-image:url('../images/sorting.svg');
+  content:"";
+  display:inline-flex;
+  width:16px;
+  height:16px;
+  margin:1px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+}
+
+.aside_menu li:hover{
+  color:#46A358;
+  font-family: 'CeraPro-Bold', sans-serif;
+}
+
+.special_offer{
+  max-width:1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 69px;
+  margin-bottom: 138px;
+}
+
+
+
+.offer_art{
+  max-width: 586px;
+  height: 250px;
+  background-color:#FBFBFB;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.offer_pic{
+  position:relative;
+  top:-60px;
+  width:287px;
+  height:292px;
+}
+
+
+.off_text{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  font-family: 'CeraPro-Regular', sans-serif;
+  padding-top: 46px;
+  padding-right: 35px;
+
+
+}
+.off_text h2{
+  text-transform: uppercase;
+  font-family: 'CeraPro-Black', sans-serif;
+  font-size: 18px;
+  color: #3D3D3D;
+  margin-bottom: 9px;
+}
+.off_text p{
+  line-height: 200%;
+  color:#727272;
+  font-size: 14px;
+}
+
+
+.more_inf{
+  display: inline-flex;
+  background-color: #46A358;
+  color: #FBFBFB;
+  border-radius: 6px;
+  padding:11px 10px;
+  text-decoration: none;
+  margin-top: 25px;
+  justify-content: center;
+  align-items:center;
+  font-family: 'CeraPro-Medium', sans-serif;
+  font-size: 14px;
+  width: 140px;
+  margin-left: 129px;
+}
+
+.more_inf_pic{
+  margin-left: 4px;
+}
+
+.blog_post{
+  max-width: 1200px;
+  margin: auto;
+  display:flex;
+  margin-top: 138px;
+  align-items: center;
+  flex-direction: column;}
+
+.blog_post h2{
+  font-size: 30px;
+  font-family: 'CeraPro-Bold', sans-serif;
+  margin-bottom: 15px;
+}
+
+.blog_post p{
+  font-size: 14px;
+  font-family: 'CeraPro-Regular', sans-serif;
+}
+
+.read_more{
+  max-width: 1200px;
+  margin: auto;
+  display:flex;
+  justify-content: space-between;
+  margin-top:35px;
+
+
+}
+.read_more_article{
+  background-color:#FBFBFB;
+  height: 362px;
+  flex-wrap: wrap;
+  /*max-width:268px;*/
+  max-width: 267px;
+}
+
+.blog_img{
+  height:196px;
+  width:100%;
+}
+.data{
+  color: #46A358;
+  font-size: 14px;
+  font-family: 'CeraPro-Medium', sans-serif;
+  padding-top: 9px;
+  margin-bottom: 4px;
+}
+
+.read_more h3{
+  font-size: 20px;
+  font-family: 'CeraPro-Bold', sans-serif;
+  color: #3D3D3D;
+  padding-right: 53px;
+  margin-bottom:4px;
+}
+
+.read_more_link{
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-family: 'CeraPro-Medium', sans-serif;
+  margin-bottom: 112npm install -g sasspx;
+  text-decoration: none;
+  color:#3D3D3D;
+
+}
+
+.read_more_link:hover{
+  color: #46A358;
+}
+
+.read_more_link svg{
+  width:14px;
+  height:14px;
+  margin-left: 3px;
+}
+.read_more_link:hover svg path{
+  fill:#46A358;
+}
+
+.dop_info{
+  font-size: 14px;
+  font-family: 'CeraPro-Regular', sans-serif;
+  margin-bottom: 9px;
+}
+
+.off{
+  width: 80px;
+  height:29px;
+  position: absolute;
+  top:11px;
+  background-color: #46A358;
+  font-family: 'CeraPro-Medium', sans-serif;
+  font-size:16px;
+  color: #FBFBFB;
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.buy_like_search{
+  width: 0;
+  height: 0;
+  display: inline-flex;
+  position: absolute;
+  background-color:#FBFBFB;
+
+}
+
+
+
+.buy_like_search li {
+  margin-right: 10px;
+}
+
+.buy_like_search li:last-child{
+  margin-right: 0;
+}
+
+.buy_like_search li a {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height:100%;
+  border-radius:4px;
+
+}
+
+
+
+.after_card{
+  display: inline-block;
+  min-height: 92px;
+  width: 100%;
+  background-color: white;
+  padding-top: 12px;
+}
+
+.icons{
+  width: 20px;
+  height: 20px;
+  opacity:0;
+}
+
+.arts article:hover .buy_like_search{
+  width:125px;
+  height: 35px;
+  left: 67px;
+  top: 235px;
+
+}
+.arts article:hover .icons{
+  opacity: 100%;
+}
+
+.buy_like_search li a:hover svg path{
+  fill:#46A358;
+}
+
+.new_price {
+  text-decoration: line-through;
+  font-family: 'CeraPro-Regular', sans-serif;
+  font-size: 18px;
+  color: #A5A5A5;
+  margin-left: 16px;
+
+}
