@@ -189,7 +189,7 @@
 }
 
 .menu li{
-   
+
     margin-right:50px;
     font-family: 'CeraPro-Regular', sans-serif;
     position: relative;
@@ -200,7 +200,7 @@
     margin-right: 0;
 }
 
-.menu_a:after{
+.menu ul li:after{
     content:"";
     display: block;
     width:0;
@@ -211,11 +211,17 @@
     transition:0.4s;
 }
 
-.menu_a:hover:after{
+.menu ul li:hover:after{
     width:100%;
 }
 
-.menu{
+
+.menu ul li ul>li:hover:after{
+    width:0;
+}
+
+
+.menu ul li{
     position:relative;
 }
 
@@ -240,36 +246,45 @@
     width: 100%;
 }
 
-
-
-.dropdown{
-    background-color: #EDF6EE;
+.menu ul li ul{
     display: none;
     flex-direction:column;
     justify-content: left;
     min-width: 188px;
     position: absolute;
-    top:57px;
-    left:-55px
+    top:100%;
+    left:-55px;
+    padding: 36px 0 0;
 }
 
-/*#plant_care_menu:hover~ .menu_a .dropdown {*/
-/*    display: flex;*/
-/*}*/
+.menu ul li ul li{
+    background-color: #EDF6EE;
+}
+
+.menu ul>li:hover >ul{
+    display:block;
+}
+
 
 .second_dropdown{
     position:relative;
 }
 
+
+
 .second_dropdown .second_dropdown_li {
     display: flex;
     flex-direction:column;
-    background-color:#EDF6EE;
+    /*background-color:#EDF6EE;*/
     position: absolute;
-    top:-73px;
-    left:183px;
+    top:-108px;
+    /*left:183px;*/
+    left:100%;
     opacity: 0;
+}
 
+.second_dropdown_li li{
+    background-color: #EDF6EE;
 }
 
 #priming_a:hover~ .second_dropdown_li{
@@ -280,11 +295,6 @@
     opacity: 100%;
 }
 
-.second_dropdown_li:hover #priming_a{
-    background-color: #1A712A;
-    color:#FFFFFF;
-    font-family: 'CeraPro-Bold',sans-serif;
-}
 
 .menu_img{
     margin-left:100px;
@@ -299,13 +309,18 @@
 }
 
 
-.menu ul li ul #priming_a:hover {
+.menu ul li ul li:nth-child(4):hover {
     color:#FBFBFB;
     background-color: #1A712A;
     font-family: 'CeraPro-Bold', sans-serif;
 }
 
-.menu ul li ul #priming_a:hover .menu_img{
+.menu ul li ul li:hover .menu_img{
+    transform:rotate(180deg) ;
+    transition:0.2s;
+}
+
+.menu ul li ul li:hover .menu_img{
     transform:rotate(180deg) ;
     transition:0.2s;
 }
@@ -673,7 +688,7 @@
 
 }
 .read_more_article{
-   background-color:#FBFBFB;
+    background-color:#FBFBFB;
     height: 362px;
     flex-wrap: wrap;
     max-width: 267px;
@@ -814,7 +829,7 @@
     font-size: 18px;
     color: #A5A5A5;
     margin-left:16px;
-    
+
 }
 
 .pre_footer{
@@ -934,7 +949,7 @@
     font-family: 'CeraPro-Regular', sans-serif;
 }
 .location img{
-  width:20px;
+    width:20px;
     height: 20px;
     margin-right: 8px;
 }
