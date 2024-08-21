@@ -879,15 +879,16 @@
     background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     overflow: hidden;
     border-radius: 6px;
+    margin-bottom: 18px;
 }
 
 .join_news_div input{
     background-color: transparent;
     border:none;
     height:20px;
-    padding-top:12px;
     padding-left: 12px;
 }
 
@@ -993,4 +994,12 @@
     display: flex;
     justify-content: center;
     align-items:center;
+    margin-bottom: 22px;
+    font-family:"CeraPro-Regular", sans-serif;
+    font-size: 14px;
+    color:#3D3D3D;
+}
+
+.footer_container ul li a:hover{
+    color:#46A358;
 }
