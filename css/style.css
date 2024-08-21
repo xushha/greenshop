@@ -1000,6 +1000,9 @@
     color:#3D3D3D;
 }
 
+.footer_container ul li a{
+    text-decoration: none;git
+}
 .footer_container ul li a:hover{
     color:#46A358;
 }
