@@ -100,23 +100,7 @@
 
 }
 
-.text.subject.options{
-    max-width:300px;
-    margin-bottom:27px;
-    text-align: center;
-}
 
-
-.btn button{
-    border-radius: 5px;
-    width: 300px;
-    height: 45px;
-    background-color: #46a358;
-    color:white;
-    max-width:300px;
-    margin:auto;
-
-}
 .logo {
     width:300px;
     height:40px;
@@ -135,7 +119,7 @@
 
 
 .content{
-    margin-bottom:41px;
+    /*margin-bottom:41px;*/
     text-align: center;
 
 }
@@ -1005,4 +989,122 @@
 }
 .footer_container ul li a:hover{
     color:#46A358;
+}
+
+.registration_page{
+    max-width:1200px;
+    margin: auto;
+    text-align: center;
+    padding-top: 52px;
+    position: relative;
+}
+.registration_page h1{
+    font-family:'CeraPro-Bold',sans-serif;
+    font-size:20px;
+    color:#3D3D3D;
+}
+.registration_page h1>span{
+    color:#46A358;
+}
+
+.re_logo img{
+    width: 20px;
+    height:20px;
+}
+
+.regis_form{
+    max-width: 1200px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 40px;
+    border-bottom: 10px solid #46A358;
+}
+.regis_form p{
+    font-family:'CeraPro-Regular',sans-serif;
+    font-size:13px;
+    color:#3D3D3D;
+    text-align: left;
+}
+
+.regis_form form{
+    border-bottom: 1px solid #EAEAEA;
+    padding-bottom: 36px;
+}
+.regis_form div{
+    margin-top: 16px;
+
+}
+.regis_form div:first-child{
+    margin-top: 14px;
+}
+.regis_form div>input{
+    width: 300px;
+    font-size: 14px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family:'CeraPro-Regular',sans-serif;
+    color:#A5A5A5;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+}
+
+
+.btn button{
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: #46a358;
+    font-size: 16px;
+    max-width:300px;
+    display: flex;
+    /*align-items: center;*/
+    padding: 16px 125px;
+    font-family:'CeraPro-Bold',sans-serif;
+    color:#FFFFFF;
+
+}
+
+.regi_with{
+    align-items: center;
+    background-color:#FFFFFF;
+    position: absolute;
+    top:369px;
+    padding:9px 7px;
+}
+
+.re_logo{
+    display:inline-flex;
+    width: 300px;
+    border:1px solid #EAEAEA;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap:9px;
+    text-decoration: none;
+    font-family:'CeraPro-Regular',sans-serif;
+    border-radius:5px;
+    font-size:13px;
+    color:#727272;
+    margin-top:15px;
+}
+.re_logo:first-of-type{
+    margin-top: 27px;
+}
+
+.hide_img{
+    position: absolute;
+    top:202px;
+    right:455px;
+}
+.exit_img{
+    position: absolute;
+    top:-60px;
+    right:333px;
 }
