@@ -1,3 +1,140 @@
-@media only screen and(max-width:600px){
+/*@media only screen and(min-width:540px){*/
+@media (max-width: 540px) {
+    .header_container{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 30px;
+    }
+    .menu{
+        margin:20px 15px 40px;
+        padding-left: 50px;
+    }
+    .main_container{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .text_section p{
+        width: 70%;
+    }
+    .float_container{
+        flex-wrap: nowrap;
 
+    }
+    .aside_menu{
+        width: 30%;
+    }
+    .aside_menu li:last-child{
+        margin-bottom: 100px;
+    }
+
+    .tabs{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .tabs ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .pagination{
+        display: block;
+        justify-content: flex-start;
+    }
+
+    .banner_img{
+        width: 100px;
+        height: 150px;
+    }
+
+    .special_offer{
+        margin-top: 120px;
+        flex-direction: column;
+        /*max-width: 540px;*/
+        margin: auto;
+
+
+
+    }
+    .offer_art{
+        /*margin-left: 20px;*/
+        margin-left: 20px;
+        /*margin-right: 640px;*/
+        background-color: red;
+    }
+    .offer_art:last-child{
+        margin-left: 20px;
+        margin-bottom: 60px;
+    }
+    .off_text{
+        text-align:left;
+        padding-right: 50px;
+
+    }
+    .more_inf{
+        margin-left: 0;
+    }
+
+    .blog_post{
+       padding-left: 25px;
+    }
+
+    .read_more{
+        flex-wrap: wrap;
+    }
+    .read_more_article{
+        height: 380px;
+        padding-left: 5px;
+
+    }
+    .read_more_article:nth-child(2),.read_more_article:nth-child(4){
+        padding-left: 0;
+        padding-right: 5px;
+    }
+    .pre_footer{
+        flex-wrap:wrap;
+    }
+    .pre_footer article{
+        border-right: 1px solid transparent;
+        border-bottom: 1px solid rgba(70, 163, 88, 0.2);
+
+    }
+    .pre_footer article:first-child{
+        padding-left: 30px;
+    }
+    .join_news_container{
+        padding-left: 30px;
+    }
+    .gradient_container{
+        flex-wrap: wrap;
+    }
+    .location{
+        font-size: 12px;
+    }
+    .footer_container{
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        position: relative;
+
+    }
+    .footer_container>article{
+        display: flex;
+        justify-content: center;
+
+    }
+    .footer_container>div{
+        margin-bottom: 30px;
+    }
+    .socials a{
+        margin-right: 5px;
+    }
+
+    .payment{
+        position: absolute;
+        left:280px;
+    }
+
+    .before_icons .socials{
+        margin-bottom: 10px;
+        margin-top:30px;
+    }
 }
