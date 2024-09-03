@@ -20,12 +20,16 @@
         flex-wrap: nowrap;
 
     }
-    .aside_menu{
-        width: 30%;
-    }
-    .aside_menu li:last-child{
-        margin-bottom: 100px;
-    }
+
+
+    /*.aside_menu li{*/
+    /* padding-left: 0;*/
+    /*    padding-top: 40px;*/
+    /*    margin-bottom: 3px;*/
+    /*}*/
+    /*.aside_menu li:last-child{*/
+    /*    margin-bottom: 100px;*/
+    /*}*/
 
     .tabs{
         flex-wrap: nowrap;
@@ -40,10 +44,7 @@
         justify-content: flex-start;
     }
 
-    .banner_img{
-        width: 100px;
-        height: 150px;
-    }
+
 
     .special_offer{
         margin-top: 120px;
@@ -137,4 +138,108 @@
         margin-bottom: 10px;
         margin-top:30px;
     }
+}
+
+@media (max-width: 768px){
+    .header_container{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .main_container{
+        justify-content: left;
+        flex-wrap: wrap;
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+   .aside_menu{
+       max-width: 20%;
+   }
+   .float_container{
+       flex-wrap: nowrap;
+       position: relative;
+       padding-right: 50px;
+
+
+   }
+  .tabs{
+      flex-direction:column;
+  }
+
+  .tabs li{
+      margin-right:45px;
+  }
+  .tabs ul{
+      margin-bottom: 25px;
+  }
+  .arts{
+      flex-wrap:wrap;
+
+
+
+  }
+  .arts article{
+      margin: 2px;
+
+  }
+  .arts article:last-child{
+      margin-right:270px;
+  }
+  .pagination{
+      margin-left: 0;
+      position: absolute;
+      top:1675px;
+      left:500px;
+  }
+
+  .special_offer{
+      flex-direction:column;
+      align-items: center;
+
+
+  }
+  .offer_art{
+      max-width:728px;
+      margin-bottom:50px;
+  }
+
+  .blog_post{
+      margin-top:50px;
+  }
+  .read_more{
+      flex-wrap: wrap;
+      justify-content:space-around;
+  }
+  .read_more_article{
+     margin-bottom: 50px;
+      max-width:300px;
+  }
+
+  .pre_footer{
+      flex-direction:column;
+      background-color: #ffffff;
+
+
+  }
+
+  .pre_footer article{
+      border-right: 1px solid transparent;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-top: 20px;
+      border-bottom: 1px solid rgba(70, 163, 88, 0.2);
+  }
+  .pre_footer article:first-child{
+      padding-left:30px;
+  }
+  .join_news_container{
+      max-width: 100%;
+      padding-right: 20px;
+      padding-left:20px;
+  }
+  .gradient_container{
+      margin-right: 20px;
+      margin-left:20px;
+      flex-wrap: wrap;
+  }
 }
